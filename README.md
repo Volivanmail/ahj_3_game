@@ -6,6 +6,7 @@
 
 # appveyor
 
-[![Build status](https://ci.appveyor.com/api/projects/status/97at3sckkf93miaj?svg=true)](https://ci.appveyor.com/project/Volivanmail/ahj_3_game)
+[![Build status](https://ci.appveyor.com/api/projects/status/nj5696sx3vml4sti?svg=true)](https://ci.appveyor.com/project/Volivanmail/ahj-3-game)
+
 
 
