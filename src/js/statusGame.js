@@ -42,6 +42,6 @@ export class Game {
         }
       });
       hole.getHole();
-    }, 1000);
+    }, 800);
   }
 }
