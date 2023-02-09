@@ -1,7 +1,6 @@
 # GitHub Pages
 
-<!-- 
-[GitHub Pages](https://Volivanmail.github.io/ahj_3_game/) --> -->
+[GitHub Pages](https://Volivanmail.github.io/ahj_3_game/)
 
 
 # appveyor
