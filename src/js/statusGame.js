@@ -12,9 +12,10 @@ export class Game {
     const holes = document.querySelectorAll(".hole");
     const stop = document.querySelector(".stop");
 
-    holes.forEach((hole) => {
-      hole.onclick = () => {
-        if (hole.className.includes("hole_has-mole")) {
+    holes.forEach((field) => {
+      field.onclick = () => {
+        if (field.className.includes("hole_has-mole")) {
+          field.classList.add("hole_molot");
           dead.textContent++;
           stop.onclick = () => {
             clearInterval(timerId);
@@ -22,6 +23,7 @@ export class Game {
             return (dead.textContent = 0), (lost.textContent = 0);
           };
         } else {
+          field.classList.add("hole_lost");
           lost.textContent++;
           if (Number(lost.textContent) === 5) {
             alert(`Вы проиграли! ${lost.textContent++} - промахов!`);
@@ -32,6 +34,13 @@ export class Game {
     });
 
     let timerId = setInterval(() => {
+      holes.forEach((field) => {
+        if (field.className.includes("hole_molot")) {
+          field.classList.remove("hole_molot");
+        } else if (field.className.includes("hole_lost")) {
+          field.classList.remove("hole_lost");
+        }
+      });
       hole.getHole();
     }, 1000);
   }
